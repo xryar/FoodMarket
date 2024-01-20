@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.auth.signin.SignInFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="26dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Email Address" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:hint="Type your Email Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_rectangle_outline_8_020202"
+            style="@style/EditText.PoppinsNormal14sp8D92A3"/>
+
+        <TextView
+            android:id="@+id/tv_password"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:inputType="textPassword"
+            style="@style/EditText.PoppinsNormal14sp8D92A3"
+            android:hint="Type your Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"
+            android:background="@drawable/shape_rectangle_outline_8_020202"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_in"
+            android:text="Sign In"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#FFC700"
+            style="@style/Button.Primary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sign_up"
+            android:text="Create New Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#8D92A3"
+            style="@style/Button.Secondary"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

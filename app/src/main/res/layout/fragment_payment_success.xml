@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.auth.signin.SignInFragment">
+
+    <ImageView
+        android:id="@+id/img_success"
+        android:src="@drawable/ic_success_order"
+        android:layout_width="200dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/tv_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You've Made Order"
+        app:layout_constraintTop_toBottomOf="@id/img_success"
+        style="@style/TextView.PoppinsNormal20sp020202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Just stay at home while we are\npreparing your best foods"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_completed"
+        android:layout_marginTop="6dp"
+        style="@style/TextView.PoppinsNormal14sp8D92A3"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_order_other_food"
+        android:text="Order Other Foods"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFC700"
+        style="@style/Button.Primary"
+        app:cornerRadius="8dp"
+        android:textAllCaps="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_view_order"
+        android:text="View My Order"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#8D92A3"
+        style="@style/Button.Secondary"
+        app:cornerRadius="8dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

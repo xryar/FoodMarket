@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.detail.PaymentFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_ordered"
+                android:text="Item Ordered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/img_poster"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_sample_product"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_ordered"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cherry Healty"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                style="@style/TextView.PoppinsNormal16sp020202"
+                app:layout_constraintStart_toEndOf="@id/img_poster"
+                app:layout_constraintTop_toBottomOf="@id/tv_ordered"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR 28.000"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toEndOf="@id/img_poster"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+            <TextView
+                android:id="@+id/tv_items_ordered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                android:text="1 items"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/img_poster"
+                app:layout_constraintTop_toTopOf="@id/img_poster"/>
+
+            <TextView
+                android:id="@+id/tv_detail_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details Transaction"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_poster"/>
+
+            <TextView
+                android:id="@+id/tv_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cherry Healty"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_transaction"/>
+
+            <TextView
+                android:id="@+id/tv_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_items"/>
+
+            <TextView
+                android:id="@+id/tv_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tax 10%"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_driver"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tax"/>
+
+            <!-- sebelah kanan -->
+
+            <TextView
+                android:id="@+id/tv_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR 18.000"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_transaction"/>
+
+            <TextView
+                android:id="@+id/tv_harga_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR 10.000"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_harga"/>
+
+            <TextView
+                android:id="@+id/tv_pajak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR 5.000"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_harga_driver"/>
+
+            <TextView
+                android:id="@+id/tv_harga_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR 33.000"
+                style="@style/TextView.PoppinsNormal14sp1ABC9C"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_pajak"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_goneMarginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+            <TextView
+                android:id="@+id/tv_deliver_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deliver to : "
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_deliver_to"/>
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_phone_number"/>
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                style="@style/TextView.PoppinsNormal14sp8D92A3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_address"/>
+
+            <!-- sebelah kanan -->
+
+            <TextView
+                android:id="@+id/tv_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cik Ajix"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_deliver_to"/>
+
+            <TextView
+                android:id="@+id/tv_phone_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345678"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name2"/>
+
+            <TextView
+                android:id="@+id/tv_address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jln. Pinang"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_phone_number2"/>
+
+            <TextView
+                android:id="@+id/tv_city2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bandung"
+                style="@style/TextView.PoppinsNormal14sp020202"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_address2"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_check_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#FFC700"
+            android:text="Checkout Now"
+            style="@style/Button.Primary"
+            android:textAllCaps="false"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
